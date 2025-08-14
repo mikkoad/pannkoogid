@@ -1,6 +1,6 @@
 # Pannkookide valmistamise õpetus
 
-See õppematerjal annab samm-sammulised juhised, kuidas valmistada maitsvaid pannkooke pühapäeva hommikuks.  
+See õppematerjal annab samm-sammulised juhised, kuidas valmistada maitsvaid pannkooke laupäeva hommikuks.  
 Näidismaterjal sisaldab tabelit, LaTeX-valemit ja Mermaid-vooskeemi.
 
 ## Õpieesmärgid
