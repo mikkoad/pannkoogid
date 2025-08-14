@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="UTF-8">
+<title>Pannkoogid</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff8f0;
+    color: #333;
+  }
+  h1, h2 {
+    color: #b85c38;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5em;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f8e4d1;
+  }
+  ol, ul {
+    margin-bottom: 1.5em;
+  }
+  .note {
+    background: #fff3cd;
+    padding: 10px;
+    border-left: 5px solid #ffecb5;
+    margin-bottom: 1.5em;
+  }
+  .btn {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 10px;
+    background-color: #b85c38;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .btn:hover {
+    background-color: #8f4529;
+  }
+</style>
+</head>
+<body>
+
+<h1>Pannkoogid</h1>
+<p>See leht põhineb GitHubi projektist <em>nullyks/pannkoogid</em> pärit infol ja toob välja lihtsa pannkoogiretsepti koos valmistamisjuhendiga.</p>
+
+<h2>Koostisosad</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Koostisosa</th>
+      <th>Kogus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Muna</td><td>2 tk</td></tr>
+    <tr><td>Nisujahu</td><td>200 g</td></tr>
+    <tr><td>Piim</td><td>500 ml</td></tr>
+    <tr><td>Suhkur</td><td>2 spl</td></tr>
+    <tr><td>Sool</td><td>näpuotsaga</td></tr>
+    <tr><td>Õli või sulatatud või</td><td>2 spl</td></tr>
+  </tbody>
+</table>
+
+<h2>Valmistamisjuhend</h2>
+<ol>
+  <li>Klopi munad suhkruga kergelt vahule.</li>
+  <li>Lisa pool piimast ja sega ühtlaseks.</li>
+  <li>Sega hulka jahu ja sool, kuni moodustub ühtlane tainas.</li>
+  <li>Lisa ülejäänud piim ja õli/või ning sega uuesti läbi.</li>
+  <li>Kuumuta pann mõõdukal kuumusel ja määri kergelt õliga.</li>
+  <li>Kalla pannile tainas, küpseta mõlemalt poolt kuldpruuniks.</li>
+  <li>Korda kuni kogu tainas on kasutatud.</li>
+</ol>
+
+<div class="note">
+  <strong>Nipp:</strong> Kui soovid õhemaid pannkooke, lisa veidi rohkem piima. Paksude pannkookide jaoks kasuta vähem piima ja veidi rohkem jahu.
+</div>
+
+<h2>Interaktiivne versioon</h2>
+<p>Klõpsa nupule, et näha gluteenivaba versiooni retseptist:</p>
+<button class="btn" id="gfBtn">Näita gluteenivaba retsepti</button>
+
+<div id="gfVersion" style="display:none; margin-top:1em;">
+  <h3>Gluteenivaba pannkoogid</h3>
+  <ul>
+    <li>2 muna</li>
+    <li>200 g gluteenivaba jahu</li>
+    <li>500 ml piima (või taimset piima)</li>
+    <li>2 spl suhkrut</li>
+    <li>näpuotsaga soola</li>
+    <li>2 spl õli või sulatatud võid</li>
+  </ul>
+</div>
+
+<script>
+  document.getElementById('gfBtn').addEventListener('click', function() {
+    const gf = document.getElementById('gfVersion');
+    if (gf.style.display === 'none') {
+      gf.style.display = 'block';
+      this.textContent = 'Peida gluteenivaba retsept';
+    } else {
+      gf.style.display = 'none';
+      this.textContent = 'Näita gluteenivaba retsepti';
+    }
+  });
+</script>
+
+</body>
+</html>
